@@ -2,7 +2,7 @@
 /*
 Plugin Name: Copyright Shortcodes
 Plugin URI: http://github.com/mircobabini/wp-copyright-shortcodes/
-Description: Provides Shortcodes to display the Copiright line automagically, year by year.
+Description: Provides Shortcodes to display the Copyright line automagically, year by year.
 Version: 1.0.0
 Author: mirkolofio
 Author URI: http://mircobabini.com
