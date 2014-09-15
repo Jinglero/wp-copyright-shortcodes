@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Provides Shortcodes to display the Copiright line automagically, year by year.
+Provides Shortcodes to display the Copyright line automagically, year by year.
 
 == Description ==
 
