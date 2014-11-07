@@ -3,8 +3,8 @@ Contributors: mirkolofio
 Donate link: http://mircobabini.com/donate
 Tags: copyright, date, year, shortcode, plugin
 Requires at least: 3.0
-Tested up to: 3.9.2
-Stable tag: 1.0.0
+Tested up to: 4.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 

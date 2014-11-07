@@ -3,7 +3,7 @@
 Plugin Name: Copyright Shortcodes
 Plugin URI: http://github.com/mircobabini/wp-copyright-shortcodes/
 Description: Provides Shortcodes to display the Copyright line automagically, year by year.
-Version: 1.0.0
+Version: 1.0.1
 Author: mirkolofio
 Author URI: http://mircobabini.com
 License: GPLv2
@@ -45,7 +45,7 @@ if( ! function_exists( 'do_shortcode_copyright' ) ){
             $year = $year.'-'.$this_year;
         }
 
-        echo '&copy; '.$year;
+        return '&copy; '.$year;
     }
 }
 add_shortcode( 'copyright', 'do_shortcode_copyright' );
@@ -54,7 +54,7 @@ add_shortcode( 'copyright', 'do_shortcode_copyright' );
 /* result: © */
 if( ! function_exists( 'do_shortcode_copy' ) ){
     function do_shortcode_copy(){
-        echo '&copy;';
+        return '&copy;';
     }
 }
 add_shortcode( 'copy', 'do_shortcode_copy' );
@@ -63,7 +63,7 @@ add_shortcode( 'copy', 'do_shortcode_copy' );
 /* example result: 2014 */
 if( ! function_exists( 'do_shortcode_year' ) ){
     function do_shortcode_year(){
-        echo date('Y');
+        return date('Y');
     }
 }
 add_shortcode( 'year', 'do_shortcode_year' );
@@ -98,10 +98,9 @@ if( ! function_exists( 'do_shortcode_years' ) ){
             $years = $year;
         }
 
-        echo $years;
+        return $years;
     }
 }
 add_shortcode( 'years', 'do_shortcode_years' );
-
 
 ?>
