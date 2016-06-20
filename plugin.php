@@ -103,4 +103,32 @@ if( ! function_exists( 'do_shortcode_years' ) ){
 }
 add_shortcode( 'years', 'do_shortcode_years' );
 
+
+
+/* usage */
+/* [age year=2014] */
+
+/* result examples: */
+/* 3 */
+
+if( ! function_exists( 'do_shortcode_age' ) ){
+    function do_shortcode_age( $atts ){
+        $atts = shortcode_atts( array(
+            'year' => date('Y'),
+        ), $atts );
+
+        $year = (int)$atts[ 'year' ];
+        $this_year = date('Y');
+
+        if( $year < $this_year ){
+            $year = $this_year - $year;
+        }else{
+            $year = 1;
+        }
+
+        return $year;
+    }
+}
+
+add_shortcode( 'age', 'do_shortcode_age' );
 ?>
